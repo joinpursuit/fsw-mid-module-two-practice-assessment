@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+    color: blanchedalmond;
+}
+
+h1 {
+    color: blanchedalmond;
+    font-size: 65px;
+}
+
+div{
+    color: blanchedalmond;
+    border: 5px solid blanchedalmond;
+}
+
+h2 {
+    color: blanchedalmond;
+    border: 5px solid blanchedalmond;
+}
