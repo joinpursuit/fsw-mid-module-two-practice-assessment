@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emoji Stories App</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./emojiStories.css" />
+    <script src="./emojiStories.js" defer></script>
+    <title>Emoji Stories App</title>
+  </head>
+  <h1>Emoji Stories App</h1>
+  <body>
+    <main>
+      <form id="emoji-story-form">
+        <section class="emoji-form">
+          <p id="emoji-story">Story:</p>
+        </section>
+        <section id="length-input">
+          <label for="story-length-input">Length:</label>
+          <input type="number" id="story-length-input" min="0" max="50"/>
+          <button id="generate-story-btn" type="submit">Generate Emoji Story</button>
+        </section>
+      </form>
+
+      <form id="emoji-description">
+        <section>
+          <label for="description-input">Description:</label>
+          <input input  id="description-input" type="text" placeholder="Describe your emoji story here."/>
+          <button id="submit-description-btn" type="submit">Submit Description</button>
+        </section>
+      </form>
+      
+      
+      <!-- <section id="emoji-description">
+        <label for="description">Description:</label>
+        <input  id="description-input" type="text" />
+        <button id="submit-description-btn" type="submit">
+          Submit Story Description
+        </button>
+      </section> -->
+    </main>
+    <section id="saved-section">
+      <h2 id="history-title">0 Saved Stories</h2>
+      <ul id="description-list"></ul>
+    </section>
+  </body>
 </html>
