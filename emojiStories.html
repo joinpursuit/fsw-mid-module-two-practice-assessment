@@ -13,12 +13,17 @@
   <div> Story: <p id="emoji-story"></p>
   <br>
   <br>
-  Length: <input id="story-length-input" type="number" placeholder="Enter a number">
-  <button onclick="generateStory()" id="generate-story-btn" type="button">Generate Emoji Story</button>
+  <form id="emoji-story-form">
+  <label>Length:</label> <input id="story-length-input" type="number" placeholder="Enter a number">
+  <button onclick="generateStory()" id="generate-story-btn" type="submit">Generate Emoji Story</button>
   <br>
-  Description: <input id="description-input" type="text" placeholder="Enter a description">
+  </form>
+  <form id="emoji-description">
+  <label>Description:</label> <input id="description-input" type="text" placeholder="Enter a description">
   <button id="submit-description-btn" type="submit">Submit Story Description</button>
+  </form>
 </div>
   <h2 id="history-title">0 Saved Stories</h2>
+  <ul id="description-list"></ul>
 </body>
 </html>
